@@ -149,13 +149,16 @@
 </p>
 
 
-</section>
-<script src="js/script.js"></script>
-</body>
-</html>
-<div class="chat-box">
-  <div id="chat-messages"></div>
+<section id="contact">
+    <h2>Send Me a Message</h2>
 
-  <input type="text" id="chat-input" placeholder="Type a message...">
-  <button onclick="sendMessage()">Send</button>
-</div>
+    <form action="https://formsubmit.co/yourgmail@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
